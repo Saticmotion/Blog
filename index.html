@@ -1,0 +1,9 @@
+---
+layout: default
+title: Saticmotion's blog
+---
+{% for post in site.posts %}
+	<a href="/Blog{{ post.url }}"><h1>{{ post.title }}</h1></a>
+	{{ post.excerpt }}
+	<a href="/Blog{{ post.url }}">Read more...</a>
+{% endfor %}
